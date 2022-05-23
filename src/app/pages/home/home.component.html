@@ -1,0 +1,20 @@
+<div class="container my-4 mx-4">
+    <h1>
+        Esta es la página de home
+    </h1>
+    <div class="row">
+        <div class="col-12">
+            <ol>
+                <li *ngFor="let movie of popularMovies.results">
+                    <img class="img img-thumbnail"
+                        style="width: 70px;"
+                        alt="Movie image"
+                        [src]="'https://image.tmdb.org/t/p/original/' + movie.poster_path">
+                    <h5>{{ movie.title }}</h5>
+                </li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+
